@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("1x0up6dclst71.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      height: 100vh;
+      overflow: auto;
+    }
+    header {
+      position: relative;
+      padding: 20px;
+      color: #fff;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .header-text {
+      flex: 1;
+      margin-top: 20px;
+    }
+    .header-image {
+      margin-left: 20px;
+    }
+    header:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("header-background.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.5;
+      z-index: -1;
+    }
+    nav {
+      background-color: #60C6A3;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #A4EAD2;
+  color: #fff;
+  border-radius: 20px;
+}
+
+    main {
+      padding: 20px;
+      margin-top: 70px;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 10px;
+      background-color: transparent;
+      color: #18FFB0;
+    }
+    p {
+      color: #A4EAD2; /* Change the color value to the desired color, e.g., #FF0000 for red */
+    }
+    footer {
+      background-color: #f1f1f1;
+      padding: 10px;
+      text-align: center;
+    }
+    .cv-link {
+      display: inline-block;
+      text-decoration: none;
+      color: #A4EAD2;
+      border: 2px solid #A4EAD2;
+      border-radius: 10px;
+      padding: 10px 20px;
+      transition: all 0.3s ease;
+    }
+    .cv-link:hover {
+      background-color: #A4EAD2;
+      color: #fff;
+	  }
+    .slide-in-left {
+      opacity: 0;
+      transform: translateX(-100%);
+      animation: slide-in-left-animation 1s ease forwards;
+    }
+
+    .slide-in-right {
+      opacity: 0;
+      transform: translateX(100%);
+      animation: slide-in-right-animation 1s ease forwards;
+    }
+
+    @keyframes slide-in-left-animation {
+      0% {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0%);
+      }
+    }
+
+    @keyframes slide-in-right-animation {
+      0% {
+        opacity: 0;
+        transform: translateX(100%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0%);
+      }
+    }
+  </style>
+  <script>
+      function scrollToSection(sectionId, pageTitle) {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: "smooth" });
+    document.title = pageTitle;
+  }
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    document.title = "My Portfolio";
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="header-text slide-in-left">
+	  <h1>ㅤㅤ</h1>
+      <h1 style="font-size: 30px;">Welcome</h1>
+	  <h1 style="font-size: 20px;">my name is</h1>
+	  <h1 style="font-size: 60px;">Czar Paolo Mendez Capacite</h1>
+	  <h1>ㅤㅤ</h1>
+	  <h1>ㅤㅤ</h1>
+	  <h1>ㅤㅤ</h1>
+	  <h1>ㅤㅤ</h1>
+	  	  <a href="Czar Paolo M. Capacite CV.pdf" download class="cv-link">Preview CV</a>
+    </div>
+    <div class="header-image slide-in-right">
+      <img src="image16-removebg-preview.png" alt="Czar Paolo Picture">
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="javascript:void(0);" onclick="scrollToTop();">Home</a></li>
+      <li><a href="javascript:void(0);" onclick="scrollToSection('about-section');">About</a></li>
+      <li><a href="javascript:void(0);" onclick="scrollToSection('works-section');">Works</a></li>
+      <li><a href="javascript:void(0);" onclick="scrollToSection('contact-section');">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+  <h1>ㅤㅤ</h1>
+  <h1>ㅤㅤ</h1>
+  <h1>ㅤㅤ</h1>
+    <h2 id="about-section">About Me</h2>
+    <p>My name is Czar Paolo Mendez Capacite, a second-year Computer Science student at the University of Bohol. I am passionate about web development and enjoy creating interactive and visually appealing websites.</p>
+    <img src="Czar_Paolo_pic_3.jpg" alt="Czar Paolo Picture">
+    <img src="Czar_Paolo_pic_2.jpg" alt="Czar Paolo Picture"> 
+		  <h1>ㅤㅤ</h1>
+	  <h1>ㅤㅤ</h1>
+    <h2 id="works-section">My Works</h2>
+    <p>Check out my works by clicking the image below</p>
+    <a href="activites.html"><img src="activities.png" alt="Activities"></a>
+		  <h1>ㅤㅤ</h1>
+	  <h1>ㅤㅤ</h1>
+    <h2 id="contact-section">Contact Me</h2>
+    <p>You can contact me on my following contacts:</p>
+	<p>Email Address: ragnaiccapacite@gmail.com</p>
+	<p>Contact Number: 09053182895
+  </main>
+  <footer>
+    &copy; 2023 Czar Paolo's Portfolio. All rights reserved.
+  </footer>
+</body>
+</html>

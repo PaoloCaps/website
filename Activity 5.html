@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Systems Activity 5</title>
+	<style>
+		body {
+			background: linear-gradient(to right, #FF0000, #00FF00, #0000FF),
+              url("image1.jpg"),
+              url("image2.jpg"),
+              url("image3.jpg");
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-blend-mode: multiply, screen, overlay;
+		}
+
+		.container {
+			width: 80%;
+			height: 80px;
+			margin: 0 auto;
+			border: 2px solid black;
+			padding: 1rem;
+			background: linear-gradient(to right, #FF0000, #00FF00, #0000FF)
+		}
+
+		h1 {
+			text-align: center;
+			margin-bottom: 2rem;
+			color: gray;
+		}
+
+		.absolute {
+			position: absolute;
+			top: 150px;
+			left: 100px;
+			border: 2px solid red;
+			padding: 1rem;
+			height: 100px;
+			background-color: #F44336;
+			color: white;
+		}
+
+		.relative {
+			position: relative;
+			top: 175px;
+			left: -38px;
+			border: 2px solid blue;
+			padding: 1rem;
+			height: 150px;
+			background-color: #2196F3;
+			color: white;
+		}
+
+		.negative {
+			margin-left: -38px;
+			margin-top: 190px;
+			border: 2px solid green;
+			padding: 1rem;
+			height: 200px;
+			background-color: #4CAF50;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Activity 5 by: Czar Paolo Capacite</h1>
+		<div class="absolute">
+			<h2>Absolute Positioning</h2>
+			<p>This element is positioned absolutely using the top and left properties with absolute values.</p>
+		</div>
+		<div class="relative">
+			<h2>Relative Positioning</h2>
+			<p>This element is positioned relatively using the top and left properties with relative values.</p>
+		</div>
+		<div class="negative">
+			<h2>Negative Margin</h2>
+			<p>This element has a negative left margin value to move it to the left of its original position.</p>
+		</div>
+	</div>
+</body>
+</html>
